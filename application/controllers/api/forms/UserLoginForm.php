@@ -8,6 +8,12 @@ class UserLoginForm extends BaseForm
     public function __construct($request)
     {
         $this->fields = [
+			[
+                'name' => 'username',
+                'label' => 'username',
+                'value' => value_from_request($request, 'username'),
+                'validate' => true
+            ],
             [
                 'name' => 'email',
                 'label' => 'email',
