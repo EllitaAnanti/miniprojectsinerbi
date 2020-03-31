@@ -26,6 +26,12 @@ class UserEditPassForm extends BaseForm
                 'value' => value_from_request($request, 'password_baru'),
                 'validate' => false
             ]
+			[
+                'name' => 'comfirm_password_baru',
+                'label' => 'Comfirm Password Baru',
+                'value' => value_from_request($request, 'comfirm_password_baru'),
+                'validate' => false
+            ]
         ];
     }
 }
